@@ -1,0 +1,64 @@
+
+    .box{
+        margin: 200px 200px 200px 200px;
+    }
+.square1 {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  display: inline-block;
+  transition: transform 1s;
+
+}
+.square2 {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    display: inline-block;
+    transition: transform 1s;
+
+  }
+  .square3 {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    display: inline-block;
+    transition: transform 1s;
+  }
+  .square4 {
+      height: 50px;
+      width: 50px;
+      background-color: green;
+      display: inline-block;
+      transition: transform 1s;
+  
+    }
+
+
+    .box:hover .square1 {
+        transform: rotate(90deg);
+        transform-origin: left top;
+
+      }
+     .box:hover .square2{
+        transform: rotate(-90deg);
+        transform-origin: right top;
+
+      }
+      .box:hover .square3 {
+        transform: rotate(-90deg);
+        transform-origin: left bottom;
+
+      }
+      .box:hover .square4 {
+        transform: rotate(90deg);
+        transform-origin: right bottom;
+
+      }
+      .text{
+          overflow:hidden;
+          position:absolute;
+          z-index: -100;
+          left: 250px;
+          top: 250px;
+      }
